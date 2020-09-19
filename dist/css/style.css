@@ -184,15 +184,30 @@ a, a:visited, a:hover {
 
 @media (min-width: 64em) {
   .header__links a {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
   .header__links a:not(:last-child) {
     margin-right: 1.75rem;
   }
 }
 
+.header__links a:hover {
+  color: #339ecc;
+  -webkit-transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out;
+}
+
 .main {
   text-align: center;
+  background: url("/dist/images/bg-curvy-desktop.svg") bottom no-repeat;
+  background-size: 100% 190px;
+}
+
+@media (max-width: 63.9375em) {
+  .main {
+    background: url("/dist/images/bg-curvy-mobile.svg") bottom no-repeat;
+    background-size: 200% 350px;
+  }
 }
 
 .main__slider img {
@@ -204,6 +219,17 @@ a, a:visited, a:hover {
   .main__slider img {
     width: 22.625rem;
     height: 16.8125rem;
+  }
+}
+
+.main__text {
+  width: 20.5rem;
+  margin: auto;
+}
+
+@media (min-width: 64em) {
+  .main__text {
+    width: 24rem;
   }
 }
 
@@ -226,7 +252,7 @@ a, a:visited, a:hover {
 
 @media (min-width: 64em) {
   .main__text p {
-    font-size: 0.625rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -238,6 +264,78 @@ a, a:visited, a:hover {
 @media (min-width: 64em) {
   .main__text a {
     font-size: 0.5rem;
+  }
+}
+
+.services {
+  background-color: #181f2a;
+  text-align: center;
+}
+
+.services .container--pall {
+  padding-top: 1.5625rem;
+  padding-bottom: 1.5625rem;
+  padding-right: 4.25rem;
+  padding-left: 4.25rem;
+}
+
+@media (min-width: 64em) {
+  .services .container--pall {
+    padding-top: 2.3125rem;
+    padding-bottom: 2.3125rem;
+    padding-right: 20rem;
+    padding-left: 20rem;
+  }
+}
+
+.service__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 5rem;
+}
+
+@media (min-width: 40em) {
+  .service__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.service__item {
+  width: 20rem;
+  margin: auto;
+}
+
+@media (min-width: 40em) {
+  .service__item {
+    width: 15.75rem;
+  }
+}
+
+.service__icon img {
+  height: 2.875rem;
+}
+
+.service__text h1 {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 40em) {
+  .service__text h1 {
+    font-size: 0.75rem;
+  }
+}
+
+.service__text p {
+  font-size: 1rem;
+  color: #BDC3D1;
+}
+
+@media (min-width: 40em) {
+  .service__text p {
+    font-size: 0.5625rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

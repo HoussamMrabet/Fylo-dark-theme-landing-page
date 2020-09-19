@@ -34,12 +34,17 @@
 
             @include breakpoint-up(large){
 
-                font-size: 0.5rem;
+                font-size: 0.7rem;
 
                 &:not(:last-child){
                     margin-right: 1.75rem;
                 }
     
+            }
+
+            &:hover{
+                color: $blue;
+                transition: color 250ms ease-in-out;
             }
 
         }

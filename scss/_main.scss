@@ -2,6 +2,13 @@
 
     text-align: center;
 
+    background: url('/dist/images/bg-curvy-desktop.svg') bottom no-repeat;
+    background-size: 100% 190px;
+    @include breakpoint-down(medium){
+        background: url('/dist/images/bg-curvy-mobile.svg') bottom no-repeat;
+        background-size: 200% 350px;
+    }
+
     &__slider{
 
         
@@ -20,6 +27,13 @@
 
     &__text{
             
+        width: 20.5rem;
+        margin: auto;
+
+        @include breakpoint-up(large){
+            width: 24rem;
+        }
+
         h1{
         
             font-family: 'Raleway', sans-serif;
@@ -35,7 +49,7 @@
             color: $gray;
             font-size: 1rem;
             @include breakpoint-up(large){
-                font-size: 0.625rem;
+                font-size: 0.75rem;
             }
         }
     
