@@ -23,6 +23,15 @@ a, a:visited, a:hover {
   text-decoration: none;
 }
 
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  color: #BDC3D1;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,15 +163,6 @@ a, a:visited, a:hover {
 
 .button:hover {
   opacity: 0.75;
-}
-
-h1 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-}
-
-p {
-  color: #BDC3D1;
 }
 
 .header nav {
@@ -440,6 +440,7 @@ p {
 @media (min-width: 40em) {
   .review {
     padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -507,11 +508,6 @@ p {
   }
 }
 
-.review__item:first-child::before {
-  background-image: url("/dist/images/bg-quotes.png");
-  background-size: 100% 100px;
-}
-
 .review__item p {
   font-size: 0.7625rem;
   line-height: 1.5;
@@ -545,5 +541,67 @@ p {
 .review__role {
   font-size: 0.5125rem;
   color: #BDC3D1;
+}
+
+.access {
+  background-color: #181f2a;
+  text-align: center;
+}
+
+.access__box {
+  position: relative;
+  top: 12rem;
+  display: inline-block;
+  background-color: #202a3c;
+  height: auto;
+  padding: 2rem 3rem;
+  width: 25rem;
+}
+
+@media (min-width: 40em) {
+  .access__box {
+    top: 9rem;
+    width: 50rem;
+  }
+}
+
+.access__text h1 {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.access__text p {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.access__input input {
+  outline: none;
+  border: none;
+  display: inline-block;
+  margin-right: 1rem;
+  padding-left: 2rem;
+  height: 3.5rem;
+  width: 19rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 64em) {
+  .access__input input {
+    margin-right: 1rem;
+    padding-left: 2rem;
+    height: 2.5rem;
+    width: 20rem;
+  }
+}
+
+.access__input .button {
+  width: 19rem;
+}
+
+.footer {
+  background-color: #0b1523;
+  padding-top: 8rem;
 }
 /*# sourceMappingURL=style.css.map */

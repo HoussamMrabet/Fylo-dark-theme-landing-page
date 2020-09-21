@@ -2,8 +2,10 @@
 
     background-color: $mainDarkBlue;
     padding-top: 10rem;
+    
     @include breakpoint-up(medium){
         padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     .container--pall{
@@ -58,11 +60,6 @@
         @include breakpoint-up(medium){
             width: 20rem;
             margin: 0;
-        }
-
-        &:first-child::before{
-            background-image: url('/dist/images/bg-quotes.png');
-            background-size: 100% 100px;
         }
 
         p{
