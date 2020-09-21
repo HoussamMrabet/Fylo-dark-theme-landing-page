@@ -21,6 +21,7 @@ body {
 
 a, a:visited, a:hover {
   text-decoration: none;
+  color: white;
 }
 
 h1 {
@@ -603,5 +604,110 @@ p {
 .footer {
   background-color: #0b1523;
   padding-top: 8rem;
+  padding: 8rem 2.5rem 2.5rem 2.5rem;
+}
+
+@media (max-width: 39.9375em) {
+  .footer {
+    padding-top: 12rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 64em) {
+  .footer__info {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr auto;
+        grid-template-rows: 1fr auto;
+        grid-template-areas: "location contact links1 links2 social";
+    justify-items: start;
+    gap: 1rem;
+  }
+}
+
+.footer__location {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 64em) {
+  .footer__location {
+    grid-area: location;
+  }
+}
+
+.footer__contact {
+  line-height: 2.25;
+}
+
+@media (min-width: 64em) {
+  .footer__contact {
+    grid-area: contact;
+  }
+}
+
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.9375rem;
+}
+
+@media (min-width: 64em) {
+  .footer__links {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+
+@media (min-width: 64em) {
+  .footer__links.col1 {
+    grid-area: links1;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .footer__links.col2 {
+    margin-bottom: 1.875rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .footer__links.col2 {
+    grid-area: links2;
+  }
+}
+
+.footer__links a {
+  line-height: 2.25;
+  -webkit-transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out;
+}
+
+.footer__links a:hover {
+  color: #339ecc;
+}
+
+.footer__social a:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+@media (min-width: 64em) {
+  .footer__social {
+    grid-area: social;
+  }
 }
 /*# sourceMappingURL=style.css.map */
