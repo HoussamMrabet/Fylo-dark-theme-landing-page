@@ -36,9 +36,7 @@
 
         h1{
         
-            font-family: 'Raleway', sans-serif;
             font-size: $font-xl;
-            font-weight: 700;
     
             @include breakpoint-up(large){
                 font-size: $font-lg;
@@ -46,7 +44,6 @@
         }
     
         p{
-            color: $gray;
             font-size: 1rem;
             @include breakpoint-up(large){
                 font-size: 0.75rem;
