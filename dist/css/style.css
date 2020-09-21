@@ -431,4 +431,119 @@ p {
 .info__text a img {
   vertical-align: middle;
 }
+
+.review {
+  background-color: #181f2a;
+  padding-top: 10rem;
+}
+
+@media (min-width: 40em) {
+  .review {
+    padding-top: 1rem;
+  }
+}
+
+.review .container--pall {
+  padding-top: 1.5625rem;
+  padding-bottom: 1.5625rem;
+  padding-right: 4.25rem;
+  padding-left: 4.25rem;
+}
+
+@media (min-width: 64em) {
+  .review .container--pall {
+    padding-top: 2.3125rem;
+    padding-bottom: 2.3125rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
+}
+
+.review__quotes {
+  position: relative;
+  top: 0.5rem;
+  left: 1.3rem;
+  z-index: 1;
+  vertical-align: middle;
+}
+
+@media (min-width: 40em) {
+  .review__quotes {
+    top: 0.5rem;
+    left: -0.3rem;
+  }
+}
+
+.review__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 40em) {
+  .review__grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+}
+
+.review__item {
+  background-color: #1c2431;
+  border-radius: 0.2rem;
+  width: 22rem;
+  height: auto;
+  margin: auto;
+  padding: 1rem 2rem;
+  z-index: 2;
+}
+
+@media (min-width: 40em) {
+  .review__item {
+    width: 20rem;
+    margin: 0;
+  }
+}
+
+.review__item:first-child::before {
+  background-image: url("/dist/images/bg-quotes.png");
+  background-size: 100% 100px;
+}
+
+.review__item p {
+  font-size: 0.7625rem;
+  line-height: 1.5;
+}
+
+.review__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.review__avatar img {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+.review__text {
+  margin-left: 10px;
+}
+
+.review__name {
+  font-size: 0.575rem;
+  margin-bottom: 1px;
+}
+
+.review__role {
+  font-size: 0.5125rem;
+  color: #BDC3D1;
+}
 /*# sourceMappingURL=style.css.map */
